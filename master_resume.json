@@ -1,0 +1,301 @@
+{
+  "meta": {
+    "name": "Francisco Turdera",
+    "title": "Cloud & Solutions Engineer | Specializing in Automation and Cost Optimization",
+    "email": "franciscoturderaofficial@gmail.com",
+    "phone": "+1 (203) 617-9711",
+    "location": "New Haven, CT",
+    "linkedin": "linkedin.com/in/francisco-turdera",
+    "github": "github.com/franciscoturdera00"
+  },
+
+  "titles": [
+    {
+      "id": "cloud_infra",
+      "text": "Cloud & Solutions Engineer | Specializing in Automation and Cost Optimization",
+      "tags": ["cloud", "infrastructure", "automation", "cost-optimization", "azure", "devops", "solutions-engineer"]
+    },
+    {
+      "id": "ai_builder",
+      "text": "AI & Automation Engineer | LLM Integration and Agentic Systems",
+      "tags": ["ai", "llm", "python", "automation", "ml-engineer", "ai-engineer", "agent"]
+    },
+    {
+      "id": "presales",
+      "text": "Pre-Sales Solutions Engineer | Cloud Infrastructure and Healthcare IT",
+      "tags": ["presales", "solutions-engineer", "customer-facing", "demo-engineering", "healthcare-it", "sales-engineer"]
+    }
+  ],
+
+  "summaries": [
+    {
+      "id": "cloud_infra",
+      "text": "Solutions Engineer recognized for cutting cloud costs by 44% and building automated deployment pipelines that reduced provisioning time by 80%. Focused on designing scalable systems, automating deployments, and driving standardization across global demo environments through data-driven collaboration.",
+      "tags": ["cloud", "infrastructure", "automation", "cost-optimization", "azure", "presales", "solutions-engineer"],
+      "priority": 1
+    },
+    {
+      "id": "ai_builder",
+      "text": "Engineer and AI builder with hands-on experience shipping production LLM integrations — from multi-client AI phone receptionists to autonomous assistant platforms with real-time monitoring and Google Workspace integration. Combines deep backend and cloud infrastructure expertise with a track record of building agentic systems from the ground up.",
+      "tags": ["ai", "llm", "python", "automation", "ml", "ml-engineer", "ai-engineer", "agent"],
+      "priority": 1
+    },
+    {
+      "id": "presales",
+      "text": "Pre-Sales and Solutions Engineer with a track record of translating complex technical systems into compelling demos and customer-specific deployments. Experienced bridging sales and engineering teams across healthcare IT and cloud environments, with proven results in cost reduction and deployment automation.",
+      "tags": ["presales", "solutions-engineer", "customer-facing", "demo-engineering", "healthcare-it", "sales-engineer"],
+      "priority": 1
+    }
+  ],
+
+  "skills": {
+    "cloud_infrastructure": [
+      "Azure (App Services, VMs, Logic Apps, Active Directory, Functions, NSG)",
+      "AWS",
+      "Storage",
+      "Cost Optimization",
+      "Infrastructure as Code (IaC)",
+      "Cloud Architecture",
+      "Docker",
+      "Kubernetes"
+    ],
+    "programming_backend": [
+      "Python",
+      "Java",
+      "REST APIs",
+      "Git",
+      "Microservices Architecture",
+      "React.js",
+      "PowerShell"
+    ],
+    "automation_cicd": [
+      "CLI Tools",
+      "GitHub Actions",
+      "GitLab Runners",
+      "Azure DevOps",
+      "Terraform"
+    ],
+    "monitoring_reliability": [
+      "Application Insights",
+      "CloudWatch",
+      "Observability",
+      "Logging & Metrics",
+      "Incident Response"
+    ],
+    "collaboration": [
+      "Agile",
+      "Jira",
+      "Solution Design",
+      "POCs",
+      "Pre-Sales Engineering",
+      "Customer-Facing Communication"
+    ]
+  },
+
+  "experience": [
+    {
+      "id": "sectra_demo_se",
+      "company": "Sectra Inc",
+      "title": "Demo Solutions Engineer",
+      "location": "Shelton, CT",
+      "start": "Nov 2024",
+      "end": "Present",
+      "priority": 1,
+      "tags": ["azure", "cloud", "presales", "automation", "infrastructure", "cost-optimization", "demo-engineering"],
+      "bullets": [
+        {
+          "id": "sectra_dse_1",
+          "text": "Cut demo systems cost by $230k annually (44%) and resource utilization (CPU/RAM) by 50% through Azure Savings Plans and infrastructure optimization.",
+          "tags": ["cost-optimization", "azure", "infrastructure", "cloud"],
+          "priority": 1
+        },
+        {
+          "id": "sectra_dse_2",
+          "text": "Reduced deployment time from 5 hours to ~1 hour by parallelizing custom Azure CLI scripts.",
+          "tags": ["automation", "azure", "cicd", "cli"],
+          "priority": 1
+        },
+        {
+          "id": "sectra_dse_3",
+          "text": "Designed modular, on-demand demo architecture to avoid unnecessary VM deployments.",
+          "tags": ["architecture", "azure", "cloud", "infrastructure"],
+          "priority": 1
+        },
+        {
+          "id": "sectra_dse_4",
+          "text": "Built an IP-restricted Static Web App + Logic Apps to automate provisioning, deployment, and shutdown.",
+          "tags": ["azure", "automation", "security", "infrastructure"],
+          "priority": 2
+        },
+        {
+          "id": "sectra_dse_5",
+          "text": "Partnered with sales engineers to design tailored demo environments for customer-specific workflows.",
+          "tags": ["presales", "customer-facing", "collaboration", "demo-engineering"],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "sectra_te",
+      "company": "Sectra Inc",
+      "title": "Technical Engineer",
+      "location": "Shelton, CT",
+      "start": "Jan 2024",
+      "end": "Nov 2024",
+      "priority": 1,
+      "tags": ["healthcare-it", "support", "sla", "client-facing", "hl7", "pacs"],
+      "bullets": [
+        {
+          "id": "sectra_te_1",
+          "text": "Maintained >98% uptime across mission-critical healthcare systems under tight SLAs.",
+          "tags": ["reliability", "sla", "healthcare-it", "uptime"],
+          "priority": 1
+        },
+        {
+          "id": "sectra_te_2",
+          "text": "Delivered real-time technical support for mission-critical healthcare systems.",
+          "tags": ["support", "healthcare-it", "incident-response"],
+          "priority": 2
+        },
+        {
+          "id": "sectra_te_3",
+          "text": "Acted as a bridge between clients and developers, translating business needs into actionable technical specs.",
+          "tags": ["customer-facing", "presales", "collaboration", "solution-design"],
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "id": "spotify_swe",
+      "company": "Spotify",
+      "title": "Backend Software Engineer Co-Op",
+      "location": "Boston, MA",
+      "start": "Jan 2021",
+      "end": "Jul 2021",
+      "priority": 2,
+      "tags": ["backend", "python", "microservices", "algorithms", "software-engineering"],
+      "bullets": [
+        {
+          "id": "spotify_1",
+          "text": "Improved personalization algorithms, increasing user retention by 12%.",
+          "tags": ["algorithms", "backend", "data", "ml"],
+          "priority": 1
+        },
+        {
+          "id": "spotify_2",
+          "text": "Migrated monolith architecture to microservices, improving systems performance and maintainability.",
+          "tags": ["microservices", "architecture", "backend", "software-engineering"],
+          "priority": 1
+        },
+        {
+          "id": "spotify_3",
+          "text": "Owned high-impact features including Daily Drive, The Get Up, and On Record.",
+          "tags": ["backend", "product", "software-engineering"],
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "nbcuniversal_de",
+      "company": "NBCUniversal",
+      "title": "Data Engineer Co-Op",
+      "location": "New York City, NY",
+      "start": "Jan 2022",
+      "end": "Jul 2022",
+      "priority": 2,
+      "tags": ["data-engineering", "pipelines", "automation", "etl"],
+      "bullets": [
+        {
+          "id": "nbc_1",
+          "text": "Standardized data pipelines and automated workflows with Slack visibility for real-time monitoring.",
+          "tags": ["data-engineering", "automation", "pipelines", "monitoring"],
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "id": "travelers_ce",
+      "company": "Travelers Insurance",
+      "title": "Cloud Engineer Co-Op",
+      "location": "Hartford, CT",
+      "start": "Jan 2020",
+      "end": "Aug 2020",
+      "priority": 2,
+      "tags": ["aws", "cloud", "automation", "cli"],
+      "bullets": [
+        {
+          "id": "travelers_1",
+          "text": "Automated AWS provisioning via CLI scripts, reducing setup time from 20 to 2 minutes.",
+          "tags": ["aws", "automation", "cli", "cloud", "infrastructure"],
+          "priority": 1
+        }
+      ]
+    }
+  ],
+
+  "projects": [
+    {
+      "id": "ai_receptionist",
+      "name": "AI Receptionist for Restaurants & Bars",
+      "tech": ["Python", "FastAPI", "Twilio", "OpenAI Realtime", "MCP", "Railway"],
+      "description": "Built a multi-client AI phone receptionist that answers calls naturally, books tables, and retrieves info through a custom MCP Python server on Railway, improving call flow speed and realism.",
+      "tags": ["ai", "python", "fastapi", "llm", "telephony", "realtime", "mcp"],
+      "priority": 1
+    },
+    {
+      "id": "whatsapp_real_estate",
+      "name": "WhatsApp AI Real Estate Agent",
+      "tech": ["Python", "REST API", "GPT"],
+      "description": "Designed and deployed an AI assistant integrated with a real-estate CRM and WhatsApp, automating property recommendations for potential clients through REST APIs and GPT. Built for modular scalability and multi-client deployment across cloud environments.",
+      "tags": ["ai", "python", "rest-api", "llm", "crm", "automation", "cloud"],
+      "priority": 1
+    },
+    {
+      "id": "lilo",
+      "name": "Lilo — Personal AI Assistant Platform",
+      "tech": ["Python", "Claude API", "OpenAI API", "Google Workspace API", "Telegram Bot API", "Raspberry Pi / Mac Server"],
+      "description": "Built a production AI assistant platform featuring autonomous background monitoring (Heartbeat tasks), Google Workspace integration, multi-model routing between Claude and GPT, and persistent identity management. Runs as an always-on personal server with Telegram as the primary interface. Designed with isolated enterprise and personal instances.",
+      "tags": ["ai", "llm", "python", "automation", "agent", "google-workspace", "multi-model", "infrastructure", "ml-engineer", "ai-engineer"],
+      "priority": 1
+    },
+    {
+      "id": "trading_bot",
+      "name": "Trading Bot",
+      "tech": ["Python", "Alpaca API"],
+      "description": "Developed a trading bot exploiting market-open volatility with risk control and backtesting.",
+      "tags": ["python", "finance", "automation", "algorithms"],
+      "priority": 2
+    },
+    {
+      "id": "smartwatch",
+      "name": "Smart Watch Prototype",
+      "tech": ["Embedded C", "Bluetooth"],
+      "description": "Built a smartwatch featuring a digital level, theremin, and notifications to explore sensor integration.",
+      "tags": ["embedded", "hardware", "iot", "c"],
+      "priority": 3
+    },
+    {
+      "id": "resume_automation",
+      "name": "Resume Tailoring Pipeline",
+      "tech": ["Python", "Claude API", "Playwright", "python-docx"],
+      "description": "Built an end-to-end CLI tool that scrapes job postings, sends them with a master resume to Claude for AI-powered tailoring, and generates a polished ATS-friendly DOCX — automating the entire resume customization workflow.",
+      "tags": ["ai", "llm", "python", "automation", "cli", "agent", "ai-engineer"],
+      "priority": 1
+    }
+  ],
+
+  "education": [
+    {
+      "id": "northeastern",
+      "institution": "Northeastern University",
+      "degree": "B.S. in Computer Science and Mathematics",
+      "honors": "Honors",
+      "location": "Boston, MA",
+      "start": "2018",
+      "end": "2023",
+      "priority": 1
+    }
+  ],
+
+  "certifications": []
+}
