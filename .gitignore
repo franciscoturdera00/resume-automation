@@ -3,5 +3,6 @@ __pycache__/
 *.pyc
 .env
 .venv/
-.claude/
+.claude/*
+!.claude/CLAUDE.md
 .DS_Store
