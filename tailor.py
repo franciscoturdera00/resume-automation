@@ -4,11 +4,10 @@
 import argparse
 import json
 import re
+import subprocess
 import sys
 from pathlib import Path
 
-from dotenv import load_dotenv
-import anthropic
 from docx import Document
 from docx.shared import Pt, Inches, RGBColor
 from docx.enum.text import WD_ALIGN_PARAGRAPH
@@ -16,7 +15,6 @@ from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 
 SCRIPT_DIR = Path(__file__).resolve().parent
-load_dotenv(SCRIPT_DIR / ".env")
 
 MASTER_RESUME = SCRIPT_DIR / "master_resume.json"
 PROMPT_FILE = SCRIPT_DIR / "prompts" / "tailor_prompt.txt"
@@ -62,23 +60,28 @@ def fetch_job_from_url(url: str) -> str:
 # ---------------------------------------------------------------------------
 
 def call_claude(job_description: str, master: dict) -> dict:
-    """Send master resume + job description to Claude and return tailored JSON."""
+    """Send master resume + job description to Claude Code CLI and return tailored JSON."""
     system_prompt = PROMPT_FILE.read_text()
     user_message = (
         f"Job Posting:\n{job_description}\n\n"
         f"Master Resume:\n{json.dumps(master)}"
     )
 
-    client = anthropic.Anthropic()
-    response = client.messages.create(
-        model="claude-sonnet-4-6",
-        max_tokens=4096,
-        temperature=0,
-        system=system_prompt,
-        messages=[{"role": "user", "content": user_message}],
+    result = subprocess.run(
+        [
+            "claude", "-p",
+            "--system-prompt", system_prompt,
+            "--output-format", "text",
+            "--model", "sonnet",
+            "--max-turns", "1",
+        ],
+        input=user_message,
+        capture_output=True,
+        text=True,
+        check=True,
     )
 
-    raw = response.content[0].text # type: ignore
+    raw = result.stdout
     # Strip accidental markdown fences
     raw = re.sub(r"^```(?:json)?\s*", "", raw, flags=re.MULTILINE)
     raw = re.sub(r"```\s*$", "", raw, flags=re.MULTILINE)
