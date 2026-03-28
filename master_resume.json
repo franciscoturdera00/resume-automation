@@ -147,20 +147,20 @@
       "bullets": [
         {
           "id": "sectra_te_1",
-          "text": "Maintained >98% uptime across mission-critical healthcare systems under tight SLAs.",
-          "tags": ["reliability", "sla", "healthcare-it", "uptime"],
+          "text": "Maintained >98% uptime across mission-critical radiology and PACS systems under strict healthcare SLAs.",
+          "tags": ["reliability", "sla", "healthcare-it", "uptime", "pacs"],
           "priority": 1
         },
         {
           "id": "sectra_te_2",
-          "text": "Delivered real-time technical support for mission-critical healthcare systems.",
-          "tags": ["support", "healthcare-it", "incident-response"],
-          "priority": 2
+          "text": "Diagnosed and resolved complex integration issues across HL7 interfaces and imaging workflows, minimizing clinical disruption.",
+          "tags": ["support", "healthcare-it", "incident-response", "hl7"],
+          "priority": 1
         },
         {
           "id": "sectra_te_3",
-          "text": "Acted as a bridge between clients and developers, translating business needs into actionable technical specs.",
-          "tags": ["customer-facing", "presales", "collaboration", "solution-design"],
+          "text": "Served as a technical liaison between clinical clients and engineering, translating healthcare workflow requirements into actionable development specs.",
+          "tags": ["customer-facing", "presales", "collaboration", "solution-design", "healthcare-it"],
           "priority": 1
         }
       ]
@@ -243,20 +243,36 @@
       "priority": 1
     },
     {
-      "id": "whatsapp_real_estate",
-      "name": "WhatsApp AI Real Estate Agent",
-      "tech": ["Python", "REST API", "GPT"],
-      "description": "Designed and deployed an AI assistant integrated with a real-estate CRM and WhatsApp, automating property recommendations for potential clients through REST APIs and GPT. Built for modular scalability and multi-client deployment across cloud environments.",
-      "tags": ["ai", "python", "rest-api", "llm", "crm", "automation", "cloud"],
+      "id": "earnings_kalshi_bot",
+      "name": "Earnings & Event-Driven Trading System",
+      "tech": ["Python", "Claude API", "Kalshi API", "Financial Modeling Prep API", "Claude Code"],
+      "description": "Built an automated trading system that parses earnings transcripts with Claude to surface information-edge signals for event-driven prediction market trades on Kalshi. Features stateless LLM invocations, structured JSON logging, DRY_RUN backtesting mode with fixtures, and Bayesian win-rate calibration with a Beta prior. Designed around a single authoritative data source to minimize noise and latency.",
+      "tags": ["ai", "llm", "python", "finance", "automation", "agent", "prediction-markets", "kalshi", "trading", "ai-engineer"],
       "priority": 1
     },
     {
       "id": "lilo",
       "name": "Lilo — Personal AI Assistant Platform",
-      "tech": ["Python", "Claude API", "OpenAI API", "Google Workspace API", "Telegram Bot API", "Raspberry Pi / Mac Server"],
-      "description": "Built a production AI assistant platform featuring autonomous background monitoring (Heartbeat tasks), Google Workspace integration, multi-model routing between Claude and GPT, and persistent identity management. Runs as an always-on personal server with Telegram as the primary interface. Designed with isolated enterprise and personal instances.",
-      "tags": ["ai", "llm", "python", "automation", "agent", "google-workspace", "multi-model", "infrastructure", "ml-engineer", "ai-engineer"],
+      "tech": ["Python", "Claude API", "OpenAI API", "Google Workspace API", "Telegram Bot API", "Docker", "Hetzner VPS"],
+      "description": "Built and deployed a production multi-instance AI assistant platform on a self-hosted Hetzner VPS. Features autonomous background monitoring (Heartbeat tasks), Google Workspace integration, multi-model routing between Claude and GPT, and isolated enterprise and personal instances running as Docker containers. Telegram serves as the primary interface with persistent identity management across instances.",
+      "tags": ["ai", "llm", "python", "automation", "agent", "google-workspace", "multi-model", "infrastructure", "docker", "ml-engineer", "ai-engineer"],
       "priority": 1
+    },
+    {
+      "id": "lilo_real_estate_crm",
+      "name": "Lilo Real Estate CRM",
+      "tech": ["Python", "Supabase", "Claude API", "WhatsApp (Baileys)", "MercadoLibre API", "Lovable", "Hetzner VPS"],
+      "description": "Designed and partially built a multi-tenant SaaS real estate CRM targeting Latin American agencies. Architecture features Supabase with row-level security for canonical property data, WhatsApp automation via Baileys for client communication, MercadoLibre portal integration at MVP, and a Claude-powered AI layer for property recommendations and client interactions. Six-phase rollout planned with explicit gate criteria.",
+      "tags": ["ai", "llm", "python", "saas", "crm", "automation", "supabase", "whatsapp", "real-estate", "cloud"],
+      "priority": 2
+    },
+    {
+      "id": "whatsapp_real_estate",
+      "name": "WhatsApp AI Real Estate Agent",
+      "tech": ["Python", "REST API", "GPT"],
+      "description": "Designed and deployed an AI assistant integrated with a real-estate CRM and WhatsApp, automating property recommendations for potential clients through REST APIs and GPT. Built for modular scalability and multi-client deployment across cloud environments.",
+      "tags": ["ai", "python", "rest-api", "llm", "crm", "automation", "cloud"],
+      "priority": 3
     },
     {
       "id": "trading_bot",
@@ -267,20 +283,20 @@
       "priority": 2
     },
     {
-      "id": "smartwatch",
-      "name": "Smart Watch Prototype",
-      "tech": ["Embedded C", "Bluetooth"],
-      "description": "Built a smartwatch featuring a digital level, theremin, and notifications to explore sensor integration.",
-      "tags": ["embedded", "hardware", "iot", "c"],
-      "priority": 3
-    },
-    {
       "id": "resume_automation",
       "name": "Resume Tailoring Pipeline",
       "tech": ["Python", "Claude API", "Playwright", "python-docx"],
       "description": "Built an end-to-end CLI tool that scrapes job postings, sends them with a master resume to Claude for AI-powered tailoring, and generates a polished ATS-friendly DOCX — automating the entire resume customization workflow.",
       "tags": ["ai", "llm", "python", "automation", "cli", "agent", "ai-engineer"],
       "priority": 1
+    },
+    {
+      "id": "smartwatch",
+      "name": "Smart Watch Prototype",
+      "tech": ["Embedded C", "Bluetooth"],
+      "description": "Built a smartwatch featuring a digital level, theremin, and notifications to explore sensor integration.",
+      "tags": ["embedded", "hardware", "iot", "c"],
+      "priority": 3
     }
   ],
 
