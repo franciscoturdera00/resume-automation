@@ -252,10 +252,51 @@
     },
     {
       "id": "lilo",
-      "name": "Lilo — Personal AI Assistant Platform",
-      "tech": ["Python", "Claude API", "OpenAI API", "Google Workspace API", "Telegram Bot API", "Docker", "Hetzner VPS"],
-      "description": "Built and deployed a production multi-instance AI assistant platform on a self-hosted Hetzner VPS. Features autonomous background monitoring (Heartbeat tasks), Google Workspace integration, multi-model routing between Claude and GPT, and isolated enterprise and personal instances running as Docker containers. Telegram serves as the primary interface with persistent identity management across instances.",
-      "tags": ["ai", "llm", "python", "automation", "agent", "google-workspace", "multi-model", "infrastructure", "docker", "ml-engineer", "ai-engineer"],
+      "name": "Lilo — Personal AI Assistant & Orchestration Platform",
+      "timeframe": "Oct 2025 – Present",
+      "tech": [
+        "Python",
+        "Claude API",
+        "Claude Code CLI",
+        "OpenAI API",
+        "Google Workspace API",
+        "Telegram Bot API",
+        "FastMCP",
+        "Docker",
+        "Hetzner VPS",
+        "tmux",
+        "Playwright MCP",
+        "LibreOffice"
+      ],
+      "description": "Long-running personal AI platform that has evolved through multiple architectures since Oct 2025 — from a VPS-hosted multi-instance Docker deployment to a Mac-hosted Claude Code orchestrator with a dynamic MCP tool framework. Telegram has been the consistent control surface throughout.",
+      "versions": [
+        {
+          "id": "v1_vps_platform",
+          "name": "v1 — Multi-Instance VPS Platform",
+          "description": "Built and deployed a production multi-instance AI assistant platform on a self-hosted Hetzner VPS. Features autonomous background monitoring (Heartbeat tasks), Google Workspace integration, multi-model routing between Claude and GPT, and isolated enterprise and personal instances running as Docker containers. Telegram serves as the primary interface with persistent identity management across instances.",
+          "tech": ["Python", "Claude API", "OpenAI API", "Google Workspace API", "Telegram Bot API", "Docker", "Hetzner VPS"],
+          "tags": ["multi-model", "infrastructure", "docker", "google-workspace", "vps", "heartbeat"]
+        },
+        {
+          "id": "v2_mac_orchestrator",
+          "name": "v2 — Mac-Hosted Claude Code Orchestrator",
+          "description": "Rebuilt Lilo as a local Claude Code orchestrator on Mac. Spawns project-specific Claude sessions from templates (solo + team), where the team template coordinates a PM agent and specialist sub-agents through a tmux-based inbox/outbox file protocol. Controlled end-to-end from Telegram for hands-off operation.",
+          "tech": ["Python", "Claude Code CLI", "Telegram Bot API", "tmux"],
+          "tags": ["orchestration", "agent", "multi-agent", "tmux", "templates", "cli"]
+        },
+        {
+          "id": "v3_mcp_tool_framework",
+          "name": "v3 — Dynamic MCP Tool Framework",
+          "description": "Added a custom FastMCP bridge that dynamically loads user-defined tools from a JSON registry, auto-installs per-tool Python requirements into the bridge venv on startup, and exposes each tool's actions as MCP calls with typed schemas. Includes a feedback-aggregation loop that rates specialist agents per build and periodically refines their registry prompts from recurring weaknesses. Integrations with Playwright MCP and the Claude-in-Chrome extension for web automation.",
+          "tech": ["Python", "FastMCP", "Claude API", "Playwright MCP", "LibreOffice"],
+          "tags": ["mcp", "tool-use", "automation", "self-improving", "ai-engineer"]
+        }
+      ],
+      "tags": [
+        "ai", "llm", "python", "automation", "agent", "google-workspace",
+        "multi-model", "infrastructure", "docker", "orchestration", "mcp",
+        "tool-use", "tmux", "templates", "vision", "ml-engineer", "ai-engineer"
+      ],
       "priority": 1
     },
     {
@@ -285,9 +326,9 @@
     {
       "id": "resume_automation",
       "name": "Resume Tailoring Pipeline",
-      "tech": ["Python", "Claude API", "Playwright", "python-docx"],
-      "description": "Built an end-to-end CLI tool that scrapes job postings, sends them with a master resume to Claude for AI-powered tailoring, and generates a polished ATS-friendly DOCX — automating the entire resume customization workflow.",
-      "tags": ["ai", "llm", "python", "automation", "cli", "agent", "ai-engineer"],
+      "tech": ["Python", "Claude API", "Playwright", "python-docx", "PyMuPDF", "LibreOffice headless", "FastMCP"],
+      "description": "End-to-end resume tailoring tool exposed via MCP. Started as a CLI that scrapes job postings and sends them with a master resume to Claude for AI-powered tailoring, generating a polished ATS-friendly DOCX. Evolved into a multi-reviewer loop: a writer emits tailored JSON, a renderer produces DOCX/PDF, PyMuPDF measures page count and fill ratio, a Claude vision pass reviews the rendered layout, and a content critic cross-checks fidelity to the master resume and coverage of JD keywords. Feedback is fed back into the writer until all gates pass, with a deterministic panic-trim fallback that selectively drops bullets to fit exactly one page.",
+      "tags": ["ai", "llm", "python", "automation", "cli", "mcp", "agent", "vision", "critic-loop", "ai-engineer"],
       "priority": 1
     },
     {
